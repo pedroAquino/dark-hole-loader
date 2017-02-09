@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>dark-hole loader</title>
+		<meta name="viewport" content="width=device-width" />
+		<link rel="stylesheet" type="text/css" href="css/dark-hole.css">
+		<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+		<script type="text/javascript" src="js/dark-hole.js"></script>
+	</head>
+	<body>
+		<div id="mask"></div>
+		<div id="main">
+		  <button class="button" id="show">Show Loader !</button>
+		</div>
+		<script type="text/javascript">
+			$(document).ready(function(){
+			  $("#mask").initLoader();
+			  
+			  $("#show").click(function() {
+			    $("#mask").initLoader();
+			    setTimeout(function(){ $("#mask").finishLoader() }, 5000);
+			  });
+
+			});
+		</script>
+	</body>
+</html>

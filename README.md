@@ -32,3 +32,6 @@ conatainerHeight = 200px
 spinnerSmWidth = 1px
 spinnerSmHeight = 1px
 ```
+
+# demo
+See a live [live preview] (http://codepen.io/pedroAquino/full/ZLjLLM/) on [codepen] (http://codepen.io)
